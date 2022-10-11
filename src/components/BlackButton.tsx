@@ -24,12 +24,19 @@ export const BlackButton = ({ title, onPress, style = {} }: Props) => {
 
 const styles = StyleSheet.create({
     blackButton: {
-        height: 50,
+        height: 45,
         width: 200,
         backgroundColor: 'black',
         borderRadius: 50,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowOpacity: 0.27,
+        elevation: 6
     },
     buttonText: {
         color: 'white',
